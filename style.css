@@ -1,0 +1,144 @@
+body{
+    box-sizing: border-box;
+    font-family: calibri;
+
+    background-color: #2F4F4F;
+}
+@media screen and (min-width:320px){
+    .main_container{
+        display: block;
+        margin-left: -15px;
+    }
+    .sub_container1{
+        width:100%;
+        margin: 1rem;
+    }
+    .sub_container2{
+        width:90%;
+        margin: 1rem;
+        font-size: 16px;
+        padding: 1rem;
+    }
+    .image_ai{
+        width:100%;
+    }
+    .para_content{
+        position: none;
+    float: none;
+    top: none;
+    left: none;
+    transform: none;
+    }
+}
+
+@media screen and (min-width:768px){
+    .main_container{
+        display: flex;
+        margin-left: 0.5rem;
+    }
+    .sub_container1{
+        width:45%;
+        margin: 2rem;
+    }
+    .sub_container2{
+        width:45%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        margin-left: 1rem;
+        font-size: 20px;
+        padding:1rem;
+
+    }
+    .image_ai{
+        width:100%;
+    }
+    .para_content{
+        position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+}
+
+@media screen and (min-width:1024px){
+
+    .main_container{
+        display: flex;
+    }
+    .sub_container1{
+        width:30%;
+        margin: 3rem;
+    }
+    .sub_container2{
+        width:30%;
+        margin-top: 2.5rem;
+        margin-bottom:3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 23px;
+        padding: 1rem;
+    }
+    .image_ai{
+        width:100%;
+    }
+    .para_content{
+        position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+}
+.heading{
+    text-align: center;
+    color:white;
+}
+.main_container{
+    width: 100%;
+    justify-content: space-around;
+}
+
+.image_ai{
+    transition: 0.4s;
+}
+.image_ai:hover{
+    transform: scale(1.01);
+}
+.sub_container2{
+    /* background-color: rgb(184,20,100); */
+    color:white;
+    /* border: 1px solid black; */
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0px 0px 11px 7px rgba(0,0,0,0.1);
+    background-color: #00abf0;
+    position: relative;
+}
+.para_content{
+    animation: fade 3s ease-in forwards;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        padding-top: -4px;
+    }
+    to{
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
